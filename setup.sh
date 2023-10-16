@@ -8,9 +8,9 @@ cd repositories
 git clone -b v1.2 https://github.com/camenduru/GPTQ-for-LLaMa.git
 cd GPTQ-for-LLaMa
 python setup_cuda.py install
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/raw/main/config.json -d /app/text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o config.json
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/raw/main/generation_config.json -d /app/text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o generation_config.json
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/raw/main/special_tokens_map.json -d /app/text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o special_tokens_map.json
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/resolve/main/tokenizer.model -d /app/text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o tokenizer.model
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/raw/main/tokenizer_config.json -d /app/text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o tokenizer_config.json
-aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/resolve/main/gptq_model-4bit-128g.safetensors -d /app/text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o gptq_model-4bit-128g.safetensors
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/raw/main/config.json -d /text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o config.json
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/raw/main/generation_config.json -d /text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o generation_config.json
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/raw/main/special_tokens_map.json -d /text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o special_tokens_map.json
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/resolve/main/tokenizer.model -d /text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o tokenizer.model
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/raw/main/tokenizer_config.json -d /text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o tokenizer_config.json
+aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-7b-Chat-GPTQ/resolve/main/gptq_model-4bit-128g.safetensors -d /text-generation-webui/models/Llama-2-7b-Chat-GPTQ -o gptq_model-4bit-128g.safetensors

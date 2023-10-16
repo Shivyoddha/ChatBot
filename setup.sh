@@ -1,3 +1,5 @@
+pip install torch
+apt-get -y install aria2
 apt-get -y install -qq aria2
 git clone -b v1.3 https://github.com/camenduru/text-generation-webui
 cd text-generation-webui

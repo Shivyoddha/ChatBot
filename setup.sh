@@ -1,4 +1,9 @@
 pip install torch
+pip install torch_grammar
+pip install peft
+pip install accelerate
+pip install datasets
+pip install sentencepiece
 pip install markdown
 pip install transformers
 apt-get -y install aria2
